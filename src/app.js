@@ -1,6 +1,7 @@
 const path = require('path')
 const express = require('express')
 const app = express() //express is installed and thus UI is developed
+const port = process.env.PORT || 3000
 const hbs = require('hbs')
 const geocode = require('./util/geocode.js')
 const forecast = require('./util/forecast.js')
@@ -106,8 +107,8 @@ app.get('*',(req,res)=>{
 
 
 
-app.listen(3000,()=>{
-    console.log('boom!....server is up and running')// 3000 is the port number where application will go boom!
+app.listen(port,()=>{
+    console.log('boom!....server is up and running at ' + port)// 3000 is the port number where application will go boom!
 })
 // app.get('',(req,res)=>{
 //     res.send('hello page') //send is used to send the static data to static pages 
