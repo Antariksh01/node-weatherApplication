@@ -1,0 +1,59 @@
+body{
+    color:#333333;
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 0 16px;
+    
+
+    display: flex;
+    flex-direction: column;   
+    min-height: 100vh; /*vh is view board height */
+
+    /* background-image: url("/image/weather.jpg");
+    /* Full height */
+  
+
+  /* Center and scale the image nicely 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+.main{
+    flex-grow: 1;
+}
+body div{
+    margin: 0;
+}
+header{
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 75px;
+}
+
+header a{
+    color:#888888;
+    margin-top: 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+footer{
+    /* position: fixed;
+    bottom: 0%;
+    height: 50px;
+    width: 100%; */
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #888888;
+    border-top: 1px solid #6b6868;
+    
+}
+
+.error{
+    
+    font-family: sans-serif;
+    font-weight: bold;
+    color: grey;
+    font-size: 175px;
+}
