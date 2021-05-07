@@ -78,7 +78,9 @@ app.get('/weatherData',(req,res)=>{
             res.send({
                 temperature : forecastData.temperature,
                 feelsLike : forecastData.feelsLike,
-                weather_descriptions: forecastData.weather_descriptions
+                weather_descriptions: forecastData.weather_descriptions,
+                location:location
+
             })
             
             //console.log(location)
